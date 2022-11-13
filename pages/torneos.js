@@ -37,7 +37,7 @@ export default function Torneo() {
 
     const myContract = new web3.eth.Contract(
         contractABI,
-        "0xd9145CCE52D386f254917e481eB44e9943F39138"
+        "0xeC30307bEA582dD488617d924D9190a1e94d2c9C"
     );
     console.log(myContract)
 
@@ -51,11 +51,25 @@ export default function Torneo() {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <div className={styles.grid}>
+                <button
+                        onClick={
+                            () => {
+                                myContract.claimPayment(amount,nonce,signature)
+                                    
+                            }
+                        }
+                        className={styles.card}>
+                        <h2>pago &rarr;</h2>
+                                         
+                        <p>Realiza tu pago</p>
+
+                    </button>
                     <button
                         onClick={
                             () => {
                                 ethereum.request({ method: 'eth_requestAccounts' }).
                                     then(wallet => setWallet(wallet[0]));
+                                    
                             }
                         }
                         className={styles.card}>
@@ -68,7 +82,7 @@ export default function Torneo() {
 
                         />
                         
-                        <p>Estas a un paso de ser un campeon hdtp</p>
+                        <p>Estas a un paso de ser un campeon</p>
 
                     </button>
                     <button
@@ -88,7 +102,7 @@ export default function Torneo() {
 
                         />
                         
-                        <p>Estas a un paso de ser un campeon hdtp</p>
+                        <p>Estas a un paso de ser un campeon</p>
 
                     </button>
                     <button
@@ -108,7 +122,7 @@ export default function Torneo() {
 
                         />
                         
-                        <p>Estas a un paso de ser un campeon hdtp</p>
+                        <p>Estas a un paso de ser un campeon</p>
 
                     </button>
                     <button
@@ -128,7 +142,7 @@ export default function Torneo() {
 
                         />
                         
-                        <p>Estas a un paso de ser un campeon hdtp</p>
+                        <p>Estas a un paso de ser un campeon</p>
 
                     </button>
                 </div>
