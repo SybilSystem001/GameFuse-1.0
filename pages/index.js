@@ -23,12 +23,12 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="http://localhost:3000/torneos" className={styles.card}>
             <h2>Torneos &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Lugar competitivo donde puedes poner tus habilidades a prueba</p>
           </a>
 
           <a href="http://localhost:3000/apuestas" className={styles.card}>
             <h2>Apuestas &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Lugar competitivo donde puedes poner tus conocimientos a prueba</p>
           </a>
 
           <a
@@ -36,7 +36,7 @@ export default function Home() {
             className={styles.card}
           >
             <h2>FAQ &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <p>Para aclarar tus dudas</p>
           </a>
 
           <a
@@ -47,7 +47,7 @@ export default function Home() {
           >
             <h2>Nosotros &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Conocemos un poco mas en nuestra aventura
             </p>
           </a>
         </div>
